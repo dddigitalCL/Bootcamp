@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reserva de Hora</title>
 </head>
-<body>
-    
+<body style="display: flex; justify-content: center;">
+    <main style="display: block;">
+    <header style="width: 100%; height: 25px; background-color: black;"></header>
+    <section style="width: 300px; justify-content: center;">
+        <h1 style="margin: auto; text-align: center; padding: 20px 0px 5px 0px; ">FORMULARIO</h1>
+        <form action="./envio-solicitud.html" method="" style="text-align: center;">
+            <div style="padding:10px 0px;" >
+                <label for="name">Nombre</label><br>
+                <input type="text" name="name" required value=""><br>
+            </div>
+            <div style="padding:5px 0px" >
+                <label for="address">Dirección</label><br>
+                <input type="text" name="address" required value=""><br>
+            </div>
+            <div style="padding:5px 0px" >
+                <label for="specialist">Especialidad médica</label><br>
+                <select name="specialist" id="specialistid" required>
+                    <option value="001">Medicina Interna</option>
+                    <option value="002">Medicina General</option>
+                    <option value="003">Traumatologia</option>
+                    <option value="004">Nutricionista</option>
+                </select><br>
+            </div>
+            <div style="padding:5px 0px" >
+                <label for="date">Fecha</label><br>
+                <input type="date" min="2024-07-11" max="2024-12-31" required value=""><br>
+            </div>
+            <div style="padding:5px 0px" >
+                <label for="time">Hora</label><br>
+                <input type="time" name="time" min="09:00" max="18:00 PM" required><br>
+            </div>
+            <div style="padding: 5px 0px;">
+                <input type="submit" value="Enviar">
+            </div>  
+        </form>
+    </section>
+    <footer style="width: 100%; height: 25px; background-color: black;"></footer>
+</main>
 </body>
 </html>
