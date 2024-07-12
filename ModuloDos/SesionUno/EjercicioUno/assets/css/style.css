@@ -1,0 +1,32 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    padding: 0px 50px;
+}
+
+hr {
+    opacity: 30%;
+}
+
+h1 {
+    text-align: center;
+}
+
+body p:nth-child(3) {
+    text-align: justify;
+}
+
+.parrafoDatos {
+    text-align: justify;
+    padding: 0px 25px;
+}
+
+.contact {
+    text-align: center;
+}
+
+p>a {
+    color: red;
+}
