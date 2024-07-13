@@ -1,0 +1,48 @@
+section{
+    display: inline-block;
+}
+
+td{
+    width: auto;
+    height: auto;
+}
+
+.rojo{
+    background-color: red;
+}
+.blanco{
+    background-color: white;
+}
+.verde{
+    background-color: green;
+}
+.gris{
+    background-color: gray;
+}
+.azul{
+    background-color: blue;
+}
+.violeta{
+    background-color: violet;
+}
+.rosado{
+    background-color: pink;
+}
+.amarillo{
+    background-color: yellow;
+}
+.turquesa{
+    background-color: turquoise;
+}
+.naranjo{
+    background-color: orange;
+}
+.purpura{
+    background-color: purple;
+}
+.negro{
+    background-color: black;
+}
+.brown{
+    background-color: brown;
+}
