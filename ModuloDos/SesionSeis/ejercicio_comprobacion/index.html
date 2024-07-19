@@ -20,8 +20,13 @@
                 <input type="text" for="apellido" class="form-control" id="apellido" value="" required aria-describedby="apellido">
             </div>
             <div class="col-md-4 col-12 pt-3 pt-md-0">
-                <label for="username" class="form-label">Nombre de usuario</label>
-                <input type="text" pattern="^@(\w+)" name="username" class="form-control" value="@" id="username" required title="FORMATO: @JOSE" aria-describedby="username">
+                    <label for="username" class="form-label p-0 opacity-0 d-none d-md-block">Nombre de usuario</label>
+                    <div class="input-group px-0 px-md-3">
+                        <input type="text" value="@" class="input-group-text col-2 col-sm-3" disabled>
+                        <input type="text" pattern="^@(\w+)" name="username" class="form-control col-10" value="" placeholder="username" id="username" required title="FORMATO: @JOSE" aria-describedby="username">    
+                    </div>
+            </div>
+       
             </div>
         </div>
         
