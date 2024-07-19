@@ -1,0 +1,47 @@
+#body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-navbar{
+    background-color: #051B54;
+}
+
+.bg-btn-sesion{
+    background-color: #FFFFFF33;
+}
+
+.bussiness-name{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.bg-header{
+    background-color: #62DAD3;
+}
+
+.widthPorcentaje{
+    width: 98%;
+    margin-left:1%;
+}
+
+.botton-width{
+    width: 100px;
+}
+
+
+@media  (max-width:991px) and (min-width:768px){
+    .botton-width{
+        width: 80px;
+    }
+}
+
+@media  (max-width:768px){
+     .botton-width{
+        width: 100%;
+    }
+}
+
+@media  (max-width:768px){
+    .md-justify-content-center{
+       justify-content:center;
+   }
+}
