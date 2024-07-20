@@ -1,12 +1,30 @@
-let valorUno = prompt("ingrese un numero");
-let valorDos = prompt("ingrese otro valor para comparar con el primero");
+let valorUno = isCorrect(prompt("ingrese el Primer número"));
 
-if (valorUno >= valorDos) {
-  if (valorUno == valorDos) {
-    alert(valorUno + " es igual que: " + valorDos);
-  } else {
-    alert(valorUno + " es mayor que: " + valorDos);
+if(valorUno){
+  let valorDos = isCorrect(prompt("ingrese el Segundo número"));
+  if(valorDos){
+    comparativoValore(valorUno, valorDos);
   }
-} else {
-  alert(valorUno + " es menor que: " + valorDos);
 }
+
+function isCorrect(valor){
+  if (isNaN(parseFloat(valor))) {
+      alert("Recuerde que el valor debe ser numérico");
+      window.location.reload(true);   
+  }else{
+    return valor
+  }
+}
+
+function comparativoValore(digitoUno, digitoDos){
+  if (digitoUno >= digitoDos) {
+    if (digitoUno == digitoDos) {
+      alert(digitoUno + " es igual que: " + digitoDos);
+    } else {
+      alert(digitoUno + " es mayor que: " + digitoDos);
+    }
+  } else {
+    alert(digitoUno + " es menor que: " + digitoDos);
+  }
+}
+
