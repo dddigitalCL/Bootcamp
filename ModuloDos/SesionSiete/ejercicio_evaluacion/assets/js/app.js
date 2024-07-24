@@ -5,10 +5,9 @@ logicaTest(menuInicial);
     function logicaTest(valorIngresado) {
     switch (valorIngresado) {
         case "1": 
-            let opcionUno = "1.- Ver Boleta \n2.- Pagar cuenta";
-            prompt(opcionUno)
+            let opcionUno = isNumber(prompt("1.- Ver Boleta \n2.- Pagar cuenta"));
             if(opcionUno == 1){
-                alert("Haga click aquí para descarga1r su boleta");
+                alert("Haga click aquí para descargar su boleta");
             }else{
                 alert("usted está siendo transferido. Espere porfavor...")
             }
@@ -46,8 +45,9 @@ logicaTest(menuInicial);
             alert("La opción ingresada no es válida. Gracias por preferir nuestros servicios");
             window.location.reload(true);
         }else{
-            alert("La opción ingresada no es válida. Gracias por preferir nuestros servicios\n \nNota:\nRecuerde que el valor debe ser númerico como se indica en la lista");
+            alert("La opción ingresada no es válida. Gracias por preferir nuestros servicios\n \nNota:\nRecuerde que el valor debe ser como se indica en la instrucción");
             window.location.reload(true);
         }
+        return ingreso
     };
   
