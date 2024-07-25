@@ -16,8 +16,10 @@ let tableBody = document.querySelector('#cuerpo-tabla');
 //Evento para visualizar o ocultar formulario de agregar tarea
 function showHideForm() {
     if(divForm.style.display == "none"){
+        botonAddTask.innerHTML = 'Ocultar formulario';
         divForm.style.display = "block";
     }else{
+        botonAddTask.innerHTML = 'Agregar tarea';
         divForm.style.display = "none";
     }
 }
@@ -33,6 +35,8 @@ function create(){
         tareas.push(objetoTarea);
         addTask.value = '';
         addTask.classList.remove('manejoError');
+        botonAddTask.innerHTML = 'Agregar tarea';
+        divForm.style.display = "none";
         read();
     }else{
         addTask.classList.add('manejoError');
@@ -48,7 +52,7 @@ function read(){
         var task = tareasRecorrido.tarea;
         html += `<tr>           
                     <td>${task}</td>
-                    <td><button type="button" id="deleteTask" onClick="deleted(${indice})" class="btn btn-danger">remover</button></td>           
+                    <td><button type="button" id="deleteTask" onClick="deleted(${indice})" class="btn btn-danger">Finalizar</button></td>           
                 </tr>`
     });
     tableBody.innerHTML = html;
