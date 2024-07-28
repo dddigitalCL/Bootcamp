@@ -26,13 +26,13 @@ $('#text1').hover(function(){
 
 
 $('#caja2').click(function(){
-    $('#caja2').css('height','300px');
-    $('#caja2').css('width','300px');
+    $(this).css('height','300px');
+    $(this).css('width','300px');
 })
 
 $('#caja2').mouseleave(function(){
-    $('#caja2').css('height','100px');
-    $('#caja2').css('width','100px');
+    $(this).css('height','100px');
+    $(this).css('width','100px');
 })
 
 $("#caja3").dblclick(function(){
