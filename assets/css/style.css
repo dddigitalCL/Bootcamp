@@ -10,12 +10,23 @@ body > * {
     z-index: 2;
 }
 
-body{
+/* body{
     background-image: url(../img/general-background.jpg);
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;   
+} */
+
+#bck-general{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    z-index: -2; 
 }
+
 body:before {
     content: '';
     position: absolute;
