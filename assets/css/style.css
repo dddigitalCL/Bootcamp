@@ -11,7 +11,7 @@ body > * {
 }
 
 body{
-    background-image: url("/assets/img/general-background.jpg");
+    background-image: url("./assets/img/general-background.jpg");
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
