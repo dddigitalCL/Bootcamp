@@ -32,15 +32,18 @@ $(document).ready(function() {
              if($elemento.hasClass('active') && $elemento.text() === "Portafolio"){
                 $('.portafolio').show();
                 $('.about').hide();
-                $('.contacto').hide();
+                $('.contacto').hide();  
+                $('.relative-card').css('overflow-y','scroll');
              }else if($elemento.hasClass('active') && $elemento.text() === "Contacto"){
                 $('.portafolio').hide();
                 $('.about').hide();
                 $('.contacto').show();
+                $('.relative-card').css('overflow','visible');
              }else if(($elemento.hasClass('active') && $elemento.text() === "Sobre mí")){
                 $('.portafolio').hide();
                 $('.about').show();
                 $('.contacto').hide();
+                $('.relative-card').css('overflow','hidden');
              }else{
                 console.log("ninguna seleccionado")
              }
@@ -118,7 +121,9 @@ $(document).ready(function() {
         });
         $modalID.html(modal);
       }
-      
+/* ------ FIN DE JS ABOUT ------- */
+/* ------ FIN DE JS ABOUT ------- */
+/* ------ INICIO DE JS CONTACTO ------- */
 /* ------ INICIO DE JS CONTACTO ------- */
 
     $('.name-div').hide();
@@ -169,20 +174,20 @@ $(document).ready(function() {
             contador++;
         }else{
             $formEmail.addClass('border border-danger');
-            $formEmail.attr('placeholder', 'debes agregar un correo');
+            $formEmail.attr('placeholder', 'Debes ingresar un correo');
         }
 
         if($name !== "" ){
             contador++
         }else{
             $formName.addClass('border border-danger');
-            $formName.attr('placeholder', 'debes agregar un nombre');
+            $formName.attr('placeholder', 'Debes ingresar tú nombre');
         }
         if($textArea !== "" ){
             contador++
         }else{
             $formText.addClass('border border-danger');
-            $formText.attr('placeholder', 'debes agregar una consulta');
+            $formText.attr('placeholder', 'Debes ingresar una consulta');
         }
 
         if(contador === 3){
@@ -190,6 +195,63 @@ $(document).ready(function() {
         }else{
         }
     }
+
+/* ------ FIN DE JS CONTACTO ------- */
+/* ------ FIN DE JS CONTACTO ------- */
+/* ------ INICIO DE JS PORTAFOLIO ------- */
+/* ------ INICIO DE JS PORTAFOLIO ------- */
+
+let portafolio = [
+    {
+        moduloDos: {
+            id: "1",
+            titulo: "Aerolinea SKYP",
+            subtitutlo:"Drilling S10",
+            descripcion: 'La página web de la aerolínea SKYP en la cual, al querer ver más información de los destinos destacados, se despliega un recuadro con la información disponible sobre el destino turístico.',
+            url: "https://dddigitalcl.github.io/Bootcamp/ModuloDos/SesionDiez/ejercicio_evaluacion/index.html"
+        }
+    },
+    {
+        moduloDos: {
+            id: "2",
+            titulo: "Listado de tareas",
+            subtitutlo:"Drilling S9",
+            descripcion: 'Trabajas como desarrollador Freelance y te contactan para realizarte una solicitud. El cliente te indica que necesita un programa simple en el cual pueda tener una lista de sus tareas pendientes, agregar nuevas tareas pendientes y eliminarlas de la lista cuando las haya completado.',
+            url: "https://dddigitalcl.github.io/Bootcamp/ModuloDos/SesionNueve/ejercicio_evaluacion/index.html"
+        }
+    },
+    
+    {
+        moduloDos: {
+            id: "3",
+            titulo: "Catálogo de Peliculas",
+            subtitutlo:"Ejercicio S10",
+            descripcion: 'Catalogo de peliculas, las cuales se deben ingresar mediante un formulario y estas se deben visualizar en tiempo real tras el ingreso',
+            url: "https://dddigitalcl.github.io/Bootcamp/ModuloDos/EjercicioDePrueba/index.html"
+        }
+    }
+];
+
+
+ let cardsID = $("#tarjeta-basic");
+ createCards();
+ function createCards() {
+     cards = "";
+     portafolio.forEach(function (objeto) {
+       cards += `
+       <div class="card text-bg-dark mb-3 mx-1 col-sm-12 col-md-5">
+                     <div class="card-header fs-4 fw-bold">${objeto.moduloDos.titulo}</div>
+                     <div class="card-body">
+                       <h5 class="card-title fw-bold">${objeto.moduloDos.subtitutlo}</h5>
+                       <p class="card-text">${objeto.moduloDos.descripcion}</p>
+                     </div>
+                     <div class="card-footer">
+                         <a href="${objeto.moduloDos.url}" target="_blank" class="btn btn-vermas">ver contenido</a>
+                     </div>
+                 </div>`
+     });
+     cardsID.html(cards);
+   }
 
 });
 

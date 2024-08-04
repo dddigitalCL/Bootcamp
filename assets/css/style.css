@@ -89,7 +89,8 @@ body:before {
     z-index: 2;
 }
 
-
+/* ------ CONTACTO ESTILOS ------- */
+/* ------ CONTACTO ESTILOS ------- */
 .contacto-title {
     font-weight:bolder;
     font-style:normal;
@@ -107,6 +108,38 @@ body:before {
     resize:none;
     display: block;
     width: 100%;
+}
+
+
+/* ------ PORTAFOLIO ESTILOS ------- */
+/* ------ PORTAFOLIO ESTILOS ------- */
+
+.portafolio-title{
+    font-weight:bolder;
+    font-style:normal;
+    color: white;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+  }
+
+.btn-vermas{
+    border-color: white;
+    color: white;
+}
+
+.btn-vermas:hover{
+    background-color: aliceblue;
+    opacity: 90%;
+    color: black;
+}
+
+.portaolio-parrafo{
+    color: rgb(182, 181, 181);
+    text-align: justify;
+    margin-left: 10px;
 }
 
 @media screen and (max-width:767px){ 
