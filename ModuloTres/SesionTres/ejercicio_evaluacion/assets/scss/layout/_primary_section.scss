@@ -1,39 +1,21 @@
-// .primary_section{
-//     padding: 15px;
-//     height: 1135px;
-//     position: relative;
-// }
-
-// .side_column{
-//     width: 195px;
-//     position: absolute;
-//     right:20px;
-//     padding: 0 20px;
-// }
 
 
 .primary_section{
-    width: 100%;
+    max-width: 100vw;
     display: grid;
     grid-template-areas: 
-    "double__column double__column triple__pictures triple__pictures triple__pictures side_column  "
-    "double__column double__column triple__pictures triple__pictures triple__pictures side_column  "
-    "double__column double__column triple__pictures triple__pictures triple__pictures side_column  "
-    "double__column double__column triple__column triple__column triple__column side_column  "
-    "double__column double__column triple__column triple__column triple__column side_column  ";
-    grid-template-columns: repeat(6, 1fr);
+    "left_side_column  center-column  right_side_column  "
+    "left_side_column  center-column  right_side_column  ";
+    grid-template-columns: 2fr 3fr 1fr;
     grid-template-rows:1fr;
-    column-gap: 5px;
-    .double__column{
-        grid-area: double__column;
+    column-gap: 10px;
+    .left_side_column{
+        grid-area: left_side_column;
     }
-    .triple__pictures{
-        grid-area: triple__pictures;
+    .center-column{
+        grid-area: center-column;
     }
-    .triple__column{
-        grid-area: triple__column;
-    }
-    .side_column{
-        grid-area: side_column;
+    .right_side_column{
+        grid-area: right_side_column;
     }
    }

@@ -1,9 +1,11 @@
 @include scroll(null);
 
 .navbar{
-    margin-top: 20px;
+    height: 60px;
     border-top: 1px solid $borders-color-ligth;
     border-bottom: 4px solid $borders-color-dark;
+    display: flex;
+    justify-content: center;
     &__list{
         display: flex;
         overflow-x: auto;
@@ -15,6 +17,7 @@
             text-align: center;
             align-content: center;
             a{
+                //abstract/tipografia
                 @include style-font(null, bold);
                 text-decoration: none;
             }
