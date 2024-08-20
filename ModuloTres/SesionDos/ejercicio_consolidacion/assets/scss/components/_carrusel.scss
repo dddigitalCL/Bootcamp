@@ -1,0 +1,25 @@
+.carrusel{
+    padding: 50px 0;
+    &__title{
+        font-size: $xx-large;
+        font-weight: bold;
+        padding: 0 30px
+    }
+    &__cards{
+        padding-top: 30px;
+        display: flex;
+        overflow-x: auto;
+        width: 100%;
+        flex-wrap: nowrap;
+        &__group{
+            padding: 0 20px;
+            &__item{
+                width: 300px;
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+

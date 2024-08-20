@@ -1,0 +1,29 @@
+//vendor
+@import "./vendor/normalize";
+
+// Base
+@import "./base/margenes";
+
+// Abstract
+@import "./abstract/tipografia";
+@import "./abstract/color";
+@import "./abstract/utils";
+
+// Layout
+@import "./layout/main";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/_primary_section";
+@import "./layout/secondary_section";
+@import "./layout/navbar";
+
+// Components
+@import "./components/information";
+@import "./components/single_column";
+@import "./components/double_column";
+@import "./components/triple_pictures";
+@import "./components/triple_column";
+
+// Pages
+@import "./pages/portada_template.scss";
+@import "./pages/general_template.scss";

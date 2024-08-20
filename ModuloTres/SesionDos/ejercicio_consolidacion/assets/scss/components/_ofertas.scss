@@ -1,0 +1,23 @@
+.offert{
+    &__title{
+        font-size: $xx-large;
+        font-weight: bold;
+        padding: 0 30px
+    }
+    &__cards{
+        padding-top: 30px;
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        &__group{
+            margin: 30px 10px;
+            width: 400px;
+            height: 400px;
+            img{
+                width: 400px;
+                max-height: 400px;
+            }
+        }
+    }
+}

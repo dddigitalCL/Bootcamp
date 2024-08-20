@@ -1,0 +1,47 @@
+
+.header{
+    @include style-font(null, bold);
+    &__language{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        a{
+            padding: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-size: 10px;
+        }
+        button{
+            right:10px;
+            position:absolute;
+            cursor: pointer;
+            border: none;
+            background-color: white;
+            @include style-font(null, bold);
+        }
+        button::after{
+            content:"﹀";
+            @include style-font();
+            position: relative;
+            padding: 0 0 0 10px;
+            top:5px;
+        }
+    }
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        position: relative;
+        padding: 0 15px;
+        &__title{
+            font-family: London;
+            font-size: 70px;
+            text-align: center;
+        }
+        &__date{
+            position: relative;
+            right: auto;
+        }
+    }
+}

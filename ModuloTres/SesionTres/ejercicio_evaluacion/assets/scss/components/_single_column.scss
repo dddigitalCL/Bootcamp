@@ -1,0 +1,25 @@
+@mixin single-colum-style(){
+    //abstract/utils
+    @include parrafo-column;
+    padding: 10px;
+    float: left;
+}
+
+
+.single_column{
+    &__item{
+        &__title{
+            //abstract/utils
+            @include title-column;
+        }
+        &__subtitle{
+            //abstract/utils
+            @include parrafo-subtitle-column;
+        }
+        &__parrafo{
+            //abstract/utils
+            @include parrafo-column;
+        }
+
+    }
+}

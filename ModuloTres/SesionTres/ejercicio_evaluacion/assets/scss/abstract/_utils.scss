@@ -1,0 +1,42 @@
+//manejo de scroll
+@mixin scroll($height){
+    $height: if($height != null, $height,8px);
+    ::-webkit-scrollbar {
+        height: $height; 
+    }
+}
+
+// esconder espaciado de scrolls
+.hr-hide-scrolls-x{
+    margin-top:-7px;
+    border-bottom: 8px solid $borders-color-dark;
+}
+
+.hr-separate-component{
+    width: 70%;
+    margin: 15px 0 15px 15%;
+}
+
+.title{
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0 0 0;
+    font-weight: bolder;
+    font-style:italic;
+}
+
+@mixin title-column(){
+    text-align: center;
+    font-size: xx-large;
+}
+
+@mixin parrafo-column{
+    text-align: justify;
+    text-indent: 40px;
+    padding:2px 0;
+}
+
+@mixin parrafo-subtitle-column{
+    font-weight: bold;
+    text-align: center;
+}

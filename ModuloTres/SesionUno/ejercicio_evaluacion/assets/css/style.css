@@ -1,0 +1,147 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  height: 50px;
+  background-color: rgb(127, 182, 255);
+}
+
+.navbar__item {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  padding: 15px 0;
+}
+
+.navbar__item > :nth-child(1) > a {
+  font-weight: bold;
+}
+
+.navbar__items > a {
+  text-decoration: none;
+  padding: 0px 15px;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url(/SesionUno/ejercicio_evaluacion/assets/img/beach-6292382_640.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome {
+  color: #fff;
+  width: 33%;
+  background-color: rgb(31, 88, 50);
+  display: block;
+  text-align: center;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+/*Se que esta parte pude haberla hecho agregando estilo directamente al h1, 
+pero preferi continuar con la sintaxis del ejercicio */
+.welcome__title {
+  font-weight: normal;
+}
+
+.welcome__descripcion {
+  text-align: left;
+}
+
+.section-form {
+  width: 50%;
+  display: block;
+  padding: 20px;
+  background-color: #ffffffa8;
+  font-weight: bold;
+}
+.form__group-one {
+    padding-bottom: 10px;
+}
+
+.form__group-one>input{
+    margin-left: 30px;
+}
+
+.form__group-two{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.form__group-two span{
+    padding-right: 15px;
+}
+
+.form__group-two>div label{
+    display: block;
+    padding-right: 15px
+}
+
+.form__group-two>div input{
+    display: block ;
+}
+
+.form__group-three>div{
+    display: inline-block;
+}
+.form__group-three span{
+    display: inline-block;
+    width:100%;
+}
+.form__group-three input{
+    width: 70px;
+}
+
+.form__group-three label{
+    padding: 0 10px;
+}
+
+button{
+    padding:5px 30px;
+    margin-top:20px;
+    margin-bottom: 100px;
+    background-color: rgb(117, 117, 180);
+    color: white;
+    border: none;
+}
+
+.footer{
+    height: 40px;
+    background-color: rgb(127, 182, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__left{
+    padding: 10px 15px;
+}
+
+.footer__right{
+    padding-right: 15px;
+}
+
+.footer__right>a{
+    padding: 0 3px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+    .form__group-two>div input{
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 957px){
+    
+    .form__group-three span{
+        display: block;
+        width:100%;
+    }
+}

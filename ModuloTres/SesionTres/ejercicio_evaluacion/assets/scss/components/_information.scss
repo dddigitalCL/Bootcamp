@@ -1,0 +1,65 @@
+
+.information{
+    display: flex;
+    overflow-x:auto;
+    @include scroll(null);
+    @include style-font();
+    &__component{
+        width: 500px;
+        height:100px;
+        display: flex;
+        border-right: 2px solid $borders-color-ligth;
+        &__img{
+            width: 100px;
+            img{
+                width: 70px;
+                height: 65px;
+                padding: 15px;
+            }
+        }
+        &__text{
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__divisa{
+            width: 200px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-left: 20px;
+            border-right: 2px solid $borders-color-ligth;
+            p{
+                border-bottom: 2px solid $borders-color-ligth;
+                padding: 4px 0;
+                position: relative;
+                span{
+                    position: absolute;
+                    right: 5px;
+                    font-weight: 600;
+                }
+            }
+            &--success{
+                color: green;
+            }
+            &--success::after{
+                content:"⬆";
+                padding-left: 5px;
+                color: green;
+            }
+            &--danger{
+                color: red;
+            }
+            &--danger::after{
+                content:"⬇";
+                padding-left: 5px;
+                color: red;
+            }
+        }
+        &__weather{
+            width: 300px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

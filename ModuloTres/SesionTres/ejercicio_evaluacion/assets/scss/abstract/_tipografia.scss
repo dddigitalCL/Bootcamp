@@ -1,0 +1,16 @@
+
+// Import de tipografía para el
+@font-face {
+    font-family: 'London';
+    src: url('../fonts/old_london/OldLondon.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @mixin style-font($color:null, $weight:normal){
+    $color: if($color != null, $color,black);
+    $weight: if($weight != null, $weight,normal);
+    font-weight:$weight;
+    font-family:Arial, Helvetica, sans-serif;
+    color:$color;
+}

@@ -1,0 +1,22 @@
+.double__column{
+    float: left;
+    width: 450px;
+    //width: 33%;
+    border: 1px solid black;
+    padding: 20px;
+    &__edition{
+        text-align: center;
+        padding: 10px;
+        //abstracts/tipografia
+        @include style-font($color:null, $weight:800);
+        font-size: 14px;
+    }
+    &__title{
+        //abstract/utils
+        @include title-column;
+    }
+    &__parrafo{
+        //abstract/utils
+        @include parrafo-column;
+    }
+}
