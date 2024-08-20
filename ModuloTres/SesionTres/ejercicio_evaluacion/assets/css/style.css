@@ -347,10 +347,9 @@ h1 {
 }
 
 .main {
-  width: 1500px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  width: 100vh;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
 }
 
 .header {
@@ -407,16 +406,24 @@ h1 {
 }
 
 .primary_section {
-  padding: 15px;
-  height: 1135px;
-  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "double__column double__column triple__pictures triple__pictures triple__pictures side_column  " "double__column double__column triple__pictures triple__pictures triple__pictures side_column  " "double__column double__column triple__pictures triple__pictures triple__pictures side_column  " "double__column double__column triple__column triple__column triple__column side_column  " "double__column double__column triple__column triple__column triple__column side_column  ";
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 5px;
 }
-
-.side_column {
-  width: 195px;
-  position: absolute;
-  right: 20px;
-  padding: 0 20px;
+.primary_section .double__column {
+  grid-area: double__column;
+}
+.primary_section .triple__pictures {
+  grid-area: triple__pictures;
+}
+.primary_section .triple__column {
+  grid-area: triple__column;
+}
+.primary_section .side_column {
+  grid-area: side_column;
 }
 
 ::-webkit-scrollbar {
@@ -531,8 +538,7 @@ h1 {
 }
 
 .double__column {
-  float: left;
-  width: 450px;
+  width: 100vh;
   border: 1px solid black;
   padding: 20px;
 }
@@ -555,8 +561,7 @@ h1 {
 }
 
 .triple__pictures {
-  width: 700px;
-  float: left;
+  width: 100vh;
   padding: 0 15px;
 }
 .triple__pictures__first {
@@ -589,8 +594,7 @@ h1 {
 }
 
 .triple__column {
-  float: left;
-  width: 700px;
+  width: 100vh;
   padding: 15px;
 }
 .triple__column__title {
@@ -608,6 +612,29 @@ h1 {
   float: left;
   padding: 10px;
   width: 210px;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header header" "navbar navbar navbar" "extra extra extra" "main main main" "footer footer footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 60px 100px 1fr 50px;
+}
+body .header {
+  grid-area: header;
+}
+body .navbar {
+  grid-area: navbar;
+}
+body .world_information {
+  grid-area: extra;
+}
+body .main {
+  grid-area: main;
+}
+body .footer {
+  grid-area: footer;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
