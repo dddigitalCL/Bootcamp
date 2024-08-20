@@ -1,0 +1,19 @@
+.triple__column{
+    float: left;
+    width: 700px;
+    //width: 50%;
+    padding: 15px;
+    &__title{
+        @include title-column;
+    }
+    &__parrafo{
+        width: 700px;
+        &__text {
+            @include single-colum-style;
+            padding: 10px;
+            width: 210px;
+        }
+        
+    }
+    
+}

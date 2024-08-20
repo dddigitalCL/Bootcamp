@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .padre{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+    }
+    .box {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+    }
+
+    .orange{
+        background-color: orange;
+    }
+
+    .red{
+        background-color: red;
+        top:0;
+    }
+    
+    .green{
+        background-color: green;
+        right: 0;
+    }
+
+    .blue{
+        background-color: blue;
+        bottom:0;
+    }
+    .yellow{
+        background-color: yellow;
+        left: 0;
+    }
+
+.yellow::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+</style>
+<body>
+    <div class="padre">
+        <div class="box orange"></div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+        <div class="box yellow"></div>
+    </div>
+    
+</body>
+</html>
