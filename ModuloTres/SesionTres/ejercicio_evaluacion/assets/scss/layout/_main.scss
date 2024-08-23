@@ -1,8 +1,6 @@
 .main{
-    width: 1500px;
-    display: flex;
+    max-width: 100vw;
     flex-direction: column;
-    margin: auto;
-    //border-left: 1px solid red;
-    //border-right: 1px solid red;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
 }

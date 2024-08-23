@@ -1,9 +1,10 @@
 
 .information{
+    margin-top: 10px;
+    height: 100px;
     display: flex;
-    overflow-x:auto;
-    @include scroll(null);
-    @include style-font();
+    overflow-x: auto;
+    border-bottom: 8px solid $borders-color-dark;
     &__component{
         width: 500px;
         height:100px;

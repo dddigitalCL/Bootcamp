@@ -1,12 +1,5 @@
-@mixin single-colum-style(){
-    //abstract/utils
-    @include parrafo-column;
-    padding: 10px;
-    float: left;
-}
-
-
 .single_column{
+    padding: 20px;
     &__item{
         &__title{
             //abstract/utils
