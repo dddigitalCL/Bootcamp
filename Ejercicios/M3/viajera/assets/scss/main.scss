@@ -1,0 +1,25 @@
+
+//abstract
+@import "./abstract/tipografia";
+@import "./abstract/colores";
+@import "./abstract/mixins";
+@import "./abstract/utils";
+//base
+@import "./base/margenes";
+@import "./base/base";
+//pages
+@import "./pages/template";
+//components
+@import "./component/welcome_component";
+@import "./component/navbar_component";
+@import "./component/button";
+@import "./component/aside_component";
+@import "./component/grilla_destinos";
+//layout
+@import "./layout/resena";
+@import "./layout/navbar";
+@import "./layout/aside";
+@import "./layout/main";
+@import "./layout/footer";
+//themes
+//vendor

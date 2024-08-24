@@ -1,0 +1,23 @@
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    &__img{
+        width: 35%;
+        img{
+            width: 100%;
+        }
+    }
+    &__titulo{
+        padding: 10px;
+        text-align: center;
+    }
+    &__parrafo{
+        width: 70%;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+        }
+}

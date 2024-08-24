@@ -1,0 +1,14 @@
+.right-box{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+}
+
+@media screen and (max-width:900px){
+    .right-box{
+        width: 70%;
+    }
+}

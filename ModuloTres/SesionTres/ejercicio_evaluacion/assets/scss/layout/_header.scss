@@ -18,10 +18,12 @@
             cursor: pointer;
             border: none;
             background-color: white;
+            //abstract/tipografia
             @include style-font(null, bold);
         }
         button::after{
             content:"﹀";
+            //abstract/tipografia
             @include style-font();
             position: relative;
             padding: 0 0 0 10px;

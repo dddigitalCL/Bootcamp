@@ -5,8 +5,8 @@
 @import "./base/margenes";
 
 // Abstract
-@import "./abstract/tipografia";
 @import "./abstract/color";
+@import "./abstract/tipografia";
 @import "./abstract/utils";
 
 // Layout
@@ -19,6 +19,7 @@
 
 // Components
 @import "./components/information";
+@import "./components/_side_picture_parrafo";
 @import "./components/single_column";
 @import "./components/double_column";
 @import "./components/triple_pictures";

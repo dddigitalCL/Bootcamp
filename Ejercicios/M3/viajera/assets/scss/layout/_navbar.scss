@@ -1,0 +1,12 @@
+.navbar{
+    text-align: center;
+    color: $blanco;
+    padding: 15px;
+}
+
+@media screen and (max-width:768px){
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+}

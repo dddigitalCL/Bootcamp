@@ -1,16 +1,33 @@
 .triple__column{
-    width: 100vh;
-    //width: 50%;
     padding: 15px;
     &__title{
+        //abstract/utils
         @include title-column;
     }
     &__parrafo{
-        width: 700px;
+        //abstracts/utils
+        @include parrafo-column;
         &__text {
-            @include single-colum-style;
-            padding: 10px;
-            width: 210px;
+            column-count: 3;
+            column-gap: 25px;
+            &--style{
+                position: relative;
+                display: block;
+                padding: 10px 10px;
+                //abstract/utils
+                @include parrafo-subtitle-column;
+                text-indent: 0;
+            }
+            &--style::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 15%;
+                width: 70%; 
+                height: 100%;
+                border-top: 1px solid $borders-color-dark;
+            }
+
         }
         
     }

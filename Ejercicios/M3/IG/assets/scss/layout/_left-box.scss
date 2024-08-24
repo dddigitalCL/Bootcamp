@@ -1,0 +1,12 @@
+.left-box{
+    width: 20%;
+    height: 100vh;
+    border-right: 2px solid rgb(216, 216, 216);
+}
+
+
+@media screen and (max-width:900px){
+    .left-box{
+        width: 30%;
+    }
+}

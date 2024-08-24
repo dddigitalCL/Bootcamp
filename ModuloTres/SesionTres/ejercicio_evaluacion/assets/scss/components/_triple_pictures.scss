@@ -1,7 +1,5 @@
 .triple__pictures{
-    width: 100vh;
-    //width: 50%;
-    padding: 0 15px;
+    position: relative;
     &__first{
         width: 100%;
         img{
@@ -12,10 +10,10 @@
         width: 49%;
         height: 200px;
         float: left;
-        overflow: hidden;
         img{
             width: 100%;
-            height: 100%
+            height: 100%;
+            object-fit:cover;
         }
     }
     &__second{
@@ -24,11 +22,11 @@
     }
     &__creditos{
         text-align: end;
+        padding: 10px;
         font-size: 8px;
-        float: left;
     }
     &__description{
-        float: left;
+        padding: 10px;
         text-align: justify;
     }
 }
