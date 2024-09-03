@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body">
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"> 
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="navbar-brand fw-bold" href="#">Ricomida</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <section class="main my-3">
+        <div class="container justify-content-center d-flex flex-wrap">
+            <div class="left col-4">
+                <img src="./assets/img/principal.jpg" class="w-100" alt="">
+            </div>
+            <div class="right col-4 px-3">
+                <div class="title fw-semibold p-0 border-bottom text-center fs-5"> PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</div>
+                <div class="description text-center p-3">110 MIN / 6 A 8 PORCIONES</div>
+                <div class="botones d-flex justify-content-center">
+                      <button type="button" class="btn btn-secondary mx-2" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Envie por correo caballero">
+                        Enviar por correo
+                      </button>
+                      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Añadame a +10 favoritos">
+                        Añadir a favoritos
+                      </button>
+                </div>
+            </div>
+            <div class="text-success col-8 m-auto">
+                <hr>
+            </div>
+        </div>
+
+        <div class="container justify-content-center d-flex flex-wrap">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade col-8 pt-3">
+                <div class="carousel-inner">
+                  <div class="carousel-item active d-flex">
+                    <div class="m-1">
+                        <img src="./assets/img/slider-1.png" class="w-100" alt="...">
+                    </div>
+                    <div class="m-1">
+                        <img src="./assets/img/slider-2.png" class="w-100" alt="...">
+                    </div>
+                    <div class="m-1">
+                        <img src="./assets/img/slider-3.png" class="w-100" alt="...">
+                    </div>
+                    <div class="m-1">
+                        <img src="./assets/img/slider-4.png" class="w-100" alt="...">
+                    </div>
+                  </div>    
+                  <div class="carousel-item d-flex">
+                    <div class="m-1">
+                        <img src="./assets/img/slider-5.png" class="w-100" alt="...">
+                    </div>
+                    <div class="m-1">
+                        <img src="./assets/img/slider-6.png" class="w-100" alt="...">
+                    </div>
+                    <div class="m-1">
+                        <img src="./assets/img/slider-7.png" class="w-100" alt="...">
+                    </div>
+                    <div class="m-1">
+                        <img src="./assets/img/slider-8.png" class="w-100" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <div class="position-relative d-flex justify-content-center mt-2">
+                    <button class="btn bg-secondary-subtle p-2 rounded-circle mx-1" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev"></button>
+                    <button class="btn bg-secondary-subtle  p-2 rounded-circle mx-1" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next"></button>
+                </div>
+              </div>
+              <div class="text-success col-8 m-auto">
+                <hr>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center flex-wrap">
+            <div class="titulo col-8 ">
+                <h4 class="text-center">RECETAS RELACIONADAS</h2>
+            </div>
+            <div class="cards col-8 d-flex">
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="./assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">PANQUEQUES</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card m-2" style="width: 18rem;">
+                    <img src="./assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">TIRAMISU</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                  <div class="card m-2" style="width: 18rem;">
+                    <img src="./assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">PLATEADA</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-dark d-flex justify-content-center">
+            <p class="text-light fw-bold m-2">Ricomida</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
