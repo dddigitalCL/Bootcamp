@@ -1,0 +1,12 @@
+@media screen and (max-width:1280px){
+    .resena{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px){
+    .resena{
+        width: 95vw;
+        display: block;
+    }
+}
