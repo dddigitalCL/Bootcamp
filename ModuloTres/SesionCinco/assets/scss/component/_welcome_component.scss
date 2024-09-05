@@ -1,0 +1,32 @@
+.welcome-component{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__titulo{
+        padding: 20px 0 10px 0;
+        font-size: 40px;
+    }
+    &__parrafo{
+        text-align: center;
+        padding: 20px 100px;
+    }
+}
+
+@media screen and (max-width:1280px){
+    .welcome-component{
+        padding: 20px 0;
+        width: 96vw;
+    }
+}
+
+@media screen and (max-width:768px){
+    .welcome-component{
+        justify-content: center;
+        padding: 20px 0;
+        &__parrafo{
+            text-align: center;
+            padding: 20px 50px;
+        }
+    }
+}
