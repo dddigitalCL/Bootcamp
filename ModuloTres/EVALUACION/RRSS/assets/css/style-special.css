@@ -1,0 +1,10 @@
+.transition-show{
+    z-index:2;
+    margin-left: 0;
+    transition: 1s;
+}
+
+.transition-hide{
+    margin-left: -100%;
+    transition: 1s;
+}
